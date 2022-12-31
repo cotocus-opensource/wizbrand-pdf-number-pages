@@ -57,19 +57,19 @@ class mainController extends Controller
                     $y = 10;
                     break;
                 case 'TR':
-                    $x = $size['width']-10;
+                    $x = $size['width']-15;
                     $y = 10;
                     break;
                 case 'TL':
-                    $x = 10;
+                    $x = 15;
                     $y = 10;
                     break;
                 case 'BR':
-                    $x = $size['width']-10;
+                    $x = $size['width']-15;
                     $y = $size['height']-10;
                     break;
                 case 'BL':
-                    $x = 10;
+                    $x = 15;
                     $y = $size['height']-10;
                     break;
                 default:
@@ -77,7 +77,7 @@ class mainController extends Controller
                     $y= $size['height']-10;
                     break;
             }
-            $text = $i;
+            $text = "$i/$count";
 
             $fpdi->Text($x, $y, $text);  // add text
         }
